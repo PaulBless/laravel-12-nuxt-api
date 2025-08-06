@@ -68,7 +68,7 @@ class PostController extends Controller
         'slug'=>$this->generateSlug($fields['title'])
     	]);
 
-    	return response(['message'=>'post created !'],201);
+    	return response(['message'=>'post created successfully !'],201);
     }
 
     function generateSlug($title)

@@ -1,27 +1,34 @@
 
 
-# Laravel Blog application
+# Laravel Blog API application
 
-### This is  a Laravel 8 Project make sure you have a php version for that. [Laravel documentation](https://laravel.com/docs/8.x/releases)
+### This is  a Laravel 12 Project make sure you have a php version for that. [Laravel documentation](https://laravel.com/docs/8.x/releases)
+
+# Description
+
+### This is a simple blog API application built with Laravel for a Nuxt.js frontend application allows users to create, read, update, and delete blog posts. The backend is built using Laravel, a popular PHP framework, and follows Laravel's coding standards based on the PHP Standards Recommendations.
+
+
+## Features
+
+- User authentication with Laravel Passport
+- CRUD operations for blog posts
 
 
 ### Steps to run this project:
 
-### `cd in laravel-blog` and run :
+1. git clone `https://github.com/paulbless/laravel-12-nuxt-api.git`
 
-1. git clone `https://github.com/Bienfait-ijambo/wizard-engineer-laravel.git`
-
-2. cd in `wizard-engineer-laravel`
+2. cd in `laravel-12-nuxt-api`
 
 3. Run `composer install` command
 
 4. Run `php artisan migrate` command for database
 
-4. Run `php artisan serve` command
+5. Run `php artisan serve` command
 
-## NB: If you are not a laravel developper this is the Node Repo for final project []. If you are a laravel dev. make sure to create a env file and a db.
 
-# Api documentation
+# Api Documentation
 
 ## PUBLIC ENDPOINTS
 
@@ -44,7 +51,6 @@ Request body
 	  "name": "string",
 	  "email": "string",
      "password": "string",
-
 	}
 ```
 
@@ -56,7 +62,7 @@ Response body
 		  "name": "string",
 		  "email": "string",
 		},
-		message:"user created !"
+		message:"user account was created successfully !"
 	}
 ```
 
@@ -158,7 +164,7 @@ Request body
 Response body with status 200
 ```js
 	{
-	  "message":"Post created !"
+	  "message":"Post created successfully !"
 	}
 ```
 
